@@ -29,6 +29,8 @@ for i = 1:4
     end
 end
 
-plot(x_i,y_i,'g*-')
+x_f = 0.5:0.1:10;
+plot(x_i,y_i,'g*')
 hold on
+plot(x_f,sin(x_f) + cos(x_f) + 1./x_f)
 plot(x,L,'r*')
